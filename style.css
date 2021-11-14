@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    display: flex;
+    background-color: turquoise;
+    flex-direction: column;
+    flex: 25%;
+    height: 30rem;
+    margin: 4%;
+}
+
+.box1 .image1,
+.box2 .image2,
+.box3 .image3,
+.box4 .image4,
+.box5 .image5,
+.box6 .image6 {
+    background-image: url("lamput.jpg");
+    background-position: 55%;
+    background-size: 225%;
+    height: 90%;
+    width: 100%;
+}
+    /* filter: grayscale(100%); */
+}
+#
+.blackandwhite {
+    background-image: url("lamput.jpg");
+    background-position: 55%;
+    background-size: 225%;
+    height: 90%;
+    width: 100%;
+    filter: grayscale(100%);
+    animation-name: fadeblackandwhite;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeblackandwhite {
+    from {filter: none;}
+    to {filter: grayscale(100%);}
+  }
+  
+
+.box1 .button1,
+.box2 .button2,
+.box3 .button3,
+.box4 .button4,
+.box5 .button5,
+.box6 .button6 {
+    height: 10%;
+    background-color:tomato;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: thistle;
+}
